@@ -17,14 +17,14 @@ class Mlmtree {
 	}
 
 
-	public function init_connection($host,$db_name,$user,$pass){
+	public static function init_connection($host,$db_name,$user,$pass){
 
 		self::$db = new \PDO("mysql:host=".$host.";dbname=".$db_name,$user,$pass);
 		
 
 	}
 
-	public function buildTreeStructure($parentID = 1){
+	public static function buildTreeStructure($parentID = 1){
 
 		
 
